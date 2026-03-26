@@ -1,0 +1,8 @@
+<div class="applications-container">
+  <div class="application" *ngFor="let app of applications" (click)="openApplication(app)">
+    <div class="app-icon">
+      <fa-icon [icon]="app.icon"></fa-icon>
+    </div>
+    <div class="app-name">{{ app.name }}</div>
+  </div>
+</div>

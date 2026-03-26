@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-image: url('/Wallpapers/img0_1920x1200.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-bottom: 48px; /* Account for fixed taskbar */
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: url('/Wallpapers/img19_1920x1200.jpg');
+  }
+}
+
+/* Desktop icon style */
+.desktop-screen {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 10;
+}
+
+.desktop-icon {
+  width: 100px;
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+}
+
+.desktop-icon a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.desktop-icon fa-icon {
+  font-size: 2rem;
+  margin-bottom: 6px;
+  color: #f1c40f;
+}
+
+.desktop-icon span {
+  font-size: 0.8rem;
+}
